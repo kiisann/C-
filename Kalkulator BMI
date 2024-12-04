@@ -1,0 +1,28 @@
+#include <iostream> 
+using namespace std; 
+ 
+int main() { 
+     
+  double berat, tinggi, bmi; 
+ 
+    cout << "Masukkan berat badan Anda (dalam kg): "; 
+    cin >> berat; 
+    cout << "Masukkan tinggi badan Anda (dalam meter): "; 
+    cin >> tinggi; 
+     
+    bmi = berat / (tinggi * tinggi); 
+ 
+    cout << "BMI Anda adalah: " << bmi << endl; 
+ 
+    if (bmi < 18.5) { 
+        cout << "Anda berada dalam kategori kurus." << endl; 
+    } else if (bmi >= 18.5 && bmi < 24.9) { 
+        cout << "Anda berada dalam kategori normal." << endl; 
+    } else if (bmi >= 25 && bmi < 29.9) { 
+        cout << "Anda berada dalam kategori overweight (kelebihan berat badan)." << endl; 
+    } else { 
+        cout << "Anda berada dalam kategori obesitas." << endl; 
+    } 
+ 
+    return 0; 
+}
